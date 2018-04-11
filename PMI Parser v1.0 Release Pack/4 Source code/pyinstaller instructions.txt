@@ -1,0 +1,11 @@
+How to compile into a .exe using pyinstaller
+
+Open command prompt, change directory to the folder that PMI_Parser.py is in, and do the following:
+
+For PMI_Parser_standalone:
+- set is_standalone to True in the code
+- paste and run: pyinstaller -F --add-data "PMI alarms.xlsx;." PMI_Parser.py
+
+For PMI_Parser_xlsx_required:
+- set is_standalone to False in the code
+- paste and run: pyinstaller -F PMI_Parser.py
